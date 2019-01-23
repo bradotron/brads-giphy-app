@@ -48,3 +48,21 @@ button {
 .w-50 {
   width: 50%;
 }
+
+.gif-card {
+  background-color: rgb(40, 40, 40);
+  border: 2px solid rgb(40, 40, 40);
+  border-radius: .2rem;
+  margin: .2rem;
+}
+
+.gif-img {
+
+}
+
+.gif-rating {
+ text-align: center;
+ background-color: rgb(40, 40, 40);
+ color: rgb(255, 255, 255);
+ padding: .2rem;
+}

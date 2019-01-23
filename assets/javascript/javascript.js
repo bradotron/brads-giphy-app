@@ -42,8 +42,11 @@ let processApiData = function(data) {
   for(let i=0; i<data.data.length; i++) {
     // i need to grab a still image for the initial display
     let newDiv = $("<div>");
+    $(newDiv).addClass("gif-card");
     let newGif = $("<img>");
+    $(newGif).addClass("gif-img");
     let newRating = $("<div>");
+    $(newRating).addClass("gif-rating");
 
     // create a data-state, data-still, data-animate
     // data-state starts as 'still'
