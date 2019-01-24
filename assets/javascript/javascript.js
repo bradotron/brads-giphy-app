@@ -20,8 +20,11 @@ $(function() {
 });
 
 let addTopicButton = function() {
-  if( $("#input-add").val().length > 0 ) {
-    createTopicButton($("#input-add").val());
+  let newTopic = $("#input-add").val().trim();
+
+  if( (newTopic.length > 0) && (topicArray.indexOf(newTopic) < 0) ) {
+    createTopicButton(newTopic);
+    topicArray.push(newTopic);
   }
   $("#input-add").val("");
 }
